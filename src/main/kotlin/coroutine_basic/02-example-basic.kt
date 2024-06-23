@@ -4,11 +4,14 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-fun main1() = runBlocking {
-
+fun main2() = runBlocking {
     launch {
-        delay(1000)
-        println("world!")
+        doWorld2()
     }
     println("Hello")
+}
+
+suspend fun doWorld2() {
+    delay(1000)
+    println("World!")
 }
