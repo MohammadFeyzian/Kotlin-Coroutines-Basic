@@ -6,7 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 // Sequentially executes doWorld followed by "Done"
-fun main() = runBlocking {
+fun main4() = runBlocking {
     doWorld4()
     println("Done")
 }
